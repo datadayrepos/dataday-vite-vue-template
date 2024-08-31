@@ -17,7 +17,7 @@ Vue-Vite component Template is a starter template for swiftly building a compone
 Clone this template and navigate to the project directory. Use `pnpm` for installing dependencies:
 
 ```sh
-git clone https://github.com/datadayrepos/vite-vue-library.git my-new-package
+git clone https://github.com/datadayrepos/vite-vue-template.git my-new-package
 cd my-new-package
 pnpm install
 ```
