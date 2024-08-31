@@ -1,6 +1,6 @@
-# ts-template
+# Vue-Vite component library template
 
-TS Template is a starter template for swiftly setting up a TypeScript package with a well-defined, easy-to-use structure.
+Vue-Vite component Template is a starter template for swiftly building a component library package with a well-defined, easy-to-use structure.
 
 ## 🚀 Features
 - **TypeScript Configurations**: Pre-configured TypeScript for smooth development.
@@ -8,14 +8,16 @@ TS Template is a starter template for swiftly setting up a TypeScript package wi
 - **Script Shortcuts**: Pre-defined NPM scripts for common tasks like linting, building, and publishing.
 - **Version Management**: Simplifies version bumping and publishing with `bumpp` and `pnpm`.
 - **Export Control**: Clearly defined export settings for various module types.
-  
+- **LIVE view**: View components live while developing.
+- **Documentation**: Live documentation and testing sing vitepress.
+
 ## 🛠 Usage
 
 ## 1. Clone & Install
 Clone this template and navigate to the project directory. Use `pnpm` for installing dependencies:
 
 ```sh
-git clone https://github.com/datadayrepos/ts-template.git my-new-package
+git clone https://github.com/datadayrepos/vite-vue-library.git my-new-package
 cd my-new-package
 pnpm install
 ```
@@ -24,25 +26,43 @@ pnpm install
 Utilize placeholders for easy setup:
 Replace all placeholders (__PLACEHOLDER__) in package.json with your package specifics. E.g., __PACKAGE_NAME__, __AUTHOR_NAME__, etc.
 
-## 3. Develop
+Seach and replace for:
+__PACKAGE_NAME__ => the package name
+__AUTHOR_NAME__ =>
+__GITHUB_USERNAME__ =>
+__REPOSITORY_NAME__ =>
+__BRAND_NAME__ =>
+
+## 3. Documentation and live view
+We combine live-view and documentation of the component using VitePress.
+Build doc pages and example code files using the patterns shown in the vite press folder.
+
+Update the '.vitepress/config.mts' file for routing. Insert a line into "function getComponents() "
+
+```sh
+# Starts vitepress dev server
+pnpm dev
+```
+
+## 4. Develop
 Your src directory is where your TypeScript source files reside. Transpiled files are output to the dist directory.
 
 ## 💻 Commands
 
 Build: Transpile TypeScript to JavaScript
 ```sh
-pnpm run build
+pnpm build
 ```
 
 Linting: Check and fix code style
 ```sh
-pnpm run lint
-pnpm run lint:fix
+pnpm lint
+pnpm lint:fix
 ```
 
 Release: Bump version and publish
 ```sh
-pnpm run release
+pnpm release
 ```
 
 Testing: Run tests (tbd)
@@ -52,14 +72,13 @@ pnpm run test
 
 Type Checking: Validate TypeScript
 ```sh
-pnpm run typecheck
+pnpm typecheck
 ```
 
 Publish: Publish package publicly
 ```sh
-pnpm run pub
+pnpm pub
 ```
-
 
 ## 📦 Template Structure
 ```json
@@ -89,9 +108,9 @@ pnpm run pub
 - dist/: Transpiled source files in JavaScript.
 
 ## 🔗 Links
-- **Repository**: [GitHub Repository](https://github.com/datadayrepos/ts-template)
-- **Issues**: [Report Bugs](https://github.com/datadayrepos/ts-template/issues)
+- **Repository**: [GitHub Repository](https://github.com/datadayrepos/vite-vue-library)
+- **Issues**: [Report Bugs](https://github.com/datadayrepos/vite-vue-library/issues)
 
 
 ## 📄 License
-[MIT](./LICENSE) License &copy; 2023 [DataDayRepos](https://github.com/datadayrepos)
+[MIT](./LICENSE) License &copy; [DataDayRepos](https://github.com/datadayrepos)
